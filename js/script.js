@@ -74,7 +74,7 @@ createApp({
         } ,
 
         play () {
-            this.stopInterval = setInterval(this.next, 500)
+            this.stopInterval = setInterval(this.next, 3000)
         }
     },
 
