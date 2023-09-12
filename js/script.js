@@ -60,7 +60,13 @@ const { createApp } = Vue
             this.activeImage = this.slides.length - 1
           }
 
-      } 
+      },
+
+      viewThumb (item) {
+
+        this.activeImage = this.slides.indexOf(item)
+        
+      }
         
     }
     
