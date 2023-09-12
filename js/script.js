@@ -69,17 +69,14 @@ createApp({
         },
 
 
-         autoPlay: function () {
+         /* stopPlay: function() {
+             clearInterval(this.autoPlay)
+        }  */
 
-            setInterval(this.next, 3000)
+        
+    },
 
-        },
-/*
-        stopPlay: function () {
-            
-            clearInterval(this.autoPlay)
-
-        } */
+    mounted() {
+        setInterval(this.next, 3000) 
     }
-
 }).mount('#app')
